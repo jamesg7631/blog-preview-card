@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap");
+:root {
+  --yellow: #f4d04e;
+  --gray-950: #111111;
+  --gray-500: #6b6b6b;
+
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+/* I don't understand the difference between text-preset-2 and text-preset-3. Seems the weight are different but weight has not been specified.*/
+.text-preset-2 {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.text-preset-3 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  background-color: var(--yellow);
+  color: var(--gray-950);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.card {
+  max-width: 336px;
+  background-color: white;
+  border-radius: 16px;
+  padding: var(--spacing-300);
+  border: 1px solid var(--gray-950);
+  box-shadow: 8px 8px 0 0 var(--gray-950);
+}
+.blog-illustration-img {
+  margin-bottom: var(--spacing-300);
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-footer {
+  /* I tried setting the max-height of the footer of the card. I thought with the other css on this file it would reduce the size of the image.  */
+  /* Instead it seems to cause an overlap with the card-description. This does not make sense to me. */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--spacing-100);
+}
+
+.profile-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+mark {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.learning-area {
+  margin-bottom: var(--spacing-150);
+  background-color: var(--yellow);
+  padding: var(--spacing-50) var(--spacing-100);
+  border-radius: 4px;
+}
+
+.card-date {
+  margin-bottom: var(--spacing-150);
+}
+
+.card-title {
+  margin-bottom: var(--spacing-150);
+  font-weight: 800;
+}
+.card-description {
+  margin-bottom: var(--spacing-150);
+  color: var(--gray-500);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
