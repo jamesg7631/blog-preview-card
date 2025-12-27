@@ -107,6 +107,10 @@ mark {
   margin-bottom: var(--spacing-150);
   font-weight: 800;
 }
+
+.card-title:hover {
+  color: var(--yellow);
+}
 .card-description {
   margin-bottom: var(--spacing-150);
   color: var(--gray-500);
